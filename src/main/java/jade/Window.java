@@ -1,5 +1,7 @@
 package jade;
 
+import org.lwjgl.Version;
+
 public class Window {
     private int width, height;
     private String title;
@@ -18,5 +20,20 @@ public class Window {
         }
 
         return window;
+    }
+
+    public void run() {
+        System.out.println("Hello LWJGL" + Version.getVersion() + "!"); // just to make sure LWJGL is working
+
+        init();
+        loop();
+    }
+
+    public void init() {
+
+    }
+
+    public void loop() {
+
     }
 }
